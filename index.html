@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/diffDate/main.js"></script>
+    
+    <title>Инструменты сборки Web-проектов</title>
+</head>
+<body class="container">
+
+<!--Кнопки-->
+
+    <nav class="menu"> 
+        <button id="calcDateBtn">Калькулятор дат</button>
+        <button id="timerBtn">Таймер</button>
+    </nav>
+
+<!--Калькулятор дат-->
+
+    <form id="datecalc" class="datecalc detacalcOn">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate" />
+        </label><br>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate" />
+        </label><br>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="datecalc__result"></p>
+      </form>
+</html>
